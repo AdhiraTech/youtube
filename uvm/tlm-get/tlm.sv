@@ -55,7 +55,6 @@ class componentA extends uvm_component;
    virtual task get (output simple_packet pkt);
       // Create a new packet
       pkt = new();
-      assert (pkt.randomize());
       `uvm_info ("COMPA", "ComponentB has requested for a packet, give the following packet to componentB", UVM_LOW)
       pkt.print (uvm_default_line_printer);
    endtask
